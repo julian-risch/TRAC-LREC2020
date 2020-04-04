@@ -1,5 +1,16 @@
 # TRAC-LREC2020
 
+## Citation
+
+If you use our work, please cite our paper [**Offensive Language Detection Explained**](https://hpi.de/fileadmin/user_upload/fachgebiete/naumann/people/risch/risch2020offensive.pdf) as follows:
+
+    @inproceedings{risch2020offensive,
+    author = {Risch, Julian and Ruff, Robin and Krestel, Ralf},
+  	booktitle = {Proceedings of the Workshop on Trolling, Aggression and Cyberbullying (TRAC@LREC)},
+  	title = {Offensive Language Detection Explained},
+  	year = 2020
+    }
+    
 ## Implementation
 The implementation in this repository is part of the Bachelor's thesis by Robin Ruff.
 
@@ -14,17 +25,6 @@ The implementation in this repository is part of the Bachelor's thesis by Robin 
 ├── webapp              // Includes a implementation of a simple web app to visualize explanations in the browser 
 └── wordvectors.zip         // Includes the GloVe word vectors we used in the thesis (please unzip)
 ```
-
-## Citation
-
-If you use our work, please cite our paper [**Offensive Language Detection Explained**](https://github.com/julian-risch/TRAC-LREC2020/raw/master/risch2020offensive.pdf) as follows:
-
-    @inproceedings{risch2020offensive,
-    author = {Risch, Julian and Ruff, Robin and Krestel, Ralf},
-  	booktitle = {Proceedings of the Workshop on Trolling, Aggression and Cyberbullying (TRAC@LREC)},
-  	title = {Offensive Language Detection Explained},
-  	year = 2020
-    }
 
 ### Visualizing Explanations
 
