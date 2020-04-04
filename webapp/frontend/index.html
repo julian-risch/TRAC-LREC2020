@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Explanations for Text Categorizations</title>
+		<script src="jquery-3.4.1.min.js" type"text/javascript"></script>
+		<script type="text/javascript" src='./script.js'></script>
+                <script src="html2canvas.min.js" type="text/javascript"></script>
+                <script src="download.js" type="text/javascript"></script>
+		<style>
+                #explanation-div{
+                    width: 40em;
+                    padding: 2em;
+                }
+                .token .tokentooltip {
+                    visibility: hidden;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    padding: 5px 0;
+                    border-radius: 4px;
+                    transform: translate(-5px, -100%);
+                    position: absolute;
+                    z-index: 1;
+                    padding: 0.3em;
+                }
+
+		.token:hover .tokentooltip {
+			visibility: visible;
+		}
+
+		#explanation {
+			font-size: 1.1em;
+			padding: 1em;
+		}
+                #loading {
+                    display:    none;
+                    position:   fixed;
+                    z-index:    1000;
+                    top:        0;
+                    left:       0;
+                    height:     100%;
+                    width:      100%;
+                    background: rgba( 255, 255, 255, .8 ) 
+                                url('./loading.gif') 
+                                50% 50% 
+                                no-repeat;
+                }
+                #leftpart {
+                    position: relative;
+		    float: left;
+                    width: 50%;
+                }
+                
+                #rightpart {
+                    position: relative;
+		    float: right;
+                    right: 0px;
+                    width: 50%;
+                }
+		</style>
+	</head>
+	<body style='padding: 2em;'>
+	    <h2>Explanations for Text Categorizations</h2>
+            <div id='leftpart'>
+		<form id='explain-form'>
+			<textarea id='text' style='height: 50vh; width:80%; max-width:90%' required></textarea> 
+			<div id="options">
+				<div id="choose-label-class">
+					<select id="choose-class">
+					</select> 
+				</div>
+				<div id="choose-classifier">
+					<label for="choose-classifier">Algorithm:</label>
+					<input type="radio" name="classifier" value="naivebayes" required><span>Naive Bayes</span>
+					<input type="radio" name="classifier" value="lstm" required><span>LSTM</span>
+					<input type="radio" name="classifier" value="svm" required><span>SVM</span>
+					<input type="radio" name="classifier" value="att_lstm" required><span>Attention LSTM</span>
+				</div>
+				<div id="choose-explainability-method">
+					<label for="choose-explainability-method">Explainability Method:</label>
+					<input id="radioLRP" type="radio" name="explainability-method" value="lrp" required><span>LRP</span>
+					<input id="radioLIME" type="radio" name="explainability-method" value="lime" required><span>LIME</span>
+					<input id="radioProb" type="radio" name="explainability-method" value="prob" required><span>Probabilistic</span>
+					<input id="radioAttention" type="radio" name="explainability-method" value="attention" required><span>Attention</span>
+				</div>
+
+
+				<div id="visualization-options">
+					<label for="vis-param-input">Visualization Strength: </label>
+					<input id="vis-param-input" value="1" type="number" name="vis-param" min="0" step="0.01">
+
+				</div>
+
+				<div id="method-specific-options">
+					<div id="lime-options">
+						<h3>LIME Options</h3>
+						<label for="sample-size-input">Sample Size: </label>
+						<input id="sample-size-input" value="500" type="number" name="sample-size" min="0" max="10000">
+						<label for="kernel-width-input">Kernel Width: </label>
+						<input id="kernel-width-input" value="100" type="number" name="kernel-width" min="0" max="10000">
+						<label for="distance-function-input">Distance Function </label>
+						<select id="distance-function-input">
+							<option value="cosine">Cosine</option>
+							<option value="l1">L1</option>
+							<option value="l2">L2</option>
+						</select>
+					</div>
+					<div id="lrp-options">
+						<h3>LRP Options</h3>
+						<label for="eps-input">Epsilon: </label>
+						<input id="eps-input" value="0.001" type="number" name="eps-input" min="0" max="1" step="0.001">
+						<label for="bias-factor-input">Bias Factor: </label>
+						<input id="bias-factor-input" value="0.0" type="number" name="bias-factor" min="0" max="1" step="0.001">
+					</div>
+				</div>
+
+				<button id='explainButton' type='submit'>Explain</button>
+			</div>
+		</form>
+                </div>
+
+                <div id='rightpart'>
+                    <div id='classification'></div>
+                    <div id='explanation-div'>
+                    </div>
+                    <input id='btn-download' type='button' value='Download Image'/>
+                    <div id='loading'></div> 
+                </div>
+	</body>
+</html>
+
