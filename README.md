@@ -1,7 +1,7 @@
 # TRAC-LREC2020
 
 ## Implementation
-The implementatuion in this repository is part of a Bachelor's thesis by Robin Ruff.
+The implementation in this repository is part of a Bachelor's thesis by Robin Ruff.
 
 ```
 .
