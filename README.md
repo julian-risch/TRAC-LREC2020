@@ -5,10 +5,14 @@
 If you use our work, please cite our paper [**Offensive Language Detection Explained**](https://hpi.de/fileadmin/user_upload/fachgebiete/naumann/people/risch/risch2020offensive.pdf) as follows:
 
     @inproceedings{risch2020offensive,
-    author = {Risch, Julian and Ruff, Robin and Krestel, Ralf},
-  	booktitle = {Proceedings of the Workshop on Trolling, Aggression and Cyberbullying (TRAC@LREC)},
-  	title = {Offensive Language Detection Explained},
-  	year = 2020
+    title = "Offensive Language Detection Explained",
+    author = "Risch, Julian and Ruff, Robin and Krestel, Ralf",
+    booktitle = "Proceedings of the Second Workshop on Trolling, Aggression and Cyberbullying (TRAC@LREC)",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association (ELRA)",
+    pages = "137--143"
     }
     
 ## Implementation
