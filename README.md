@@ -2,7 +2,7 @@
 
 ## Citation
 
-If you use our work, please cite our paper [**Offensive Language Detection Explained**](https://hpi.de/fileadmin/user_upload/fachgebiete/naumann/people/risch/risch2020offensive.pdf) as follows:
+If you use our work, please cite our short paper [**Offensive Language Detection Explained**](https://hpi.de/fileadmin/user_upload/fachgebiete/naumann/people/risch/risch2020offensive.pdf) as follows:
 
     @inproceedings{risch2020offensive,
     title = "Offensive Language Detection Explained",
@@ -14,6 +14,21 @@ If you use our work, please cite our paper [**Offensive Language Detection Expla
     publisher = "European Language Resources Association (ELRA)",
     pages = "137--143"
     }
+    
+or our journal article [**Explaining Offensive Language Detection**](https://hpi.de/fileadmin/user_upload/fachgebiete/naumann/people/risch/risch2020explaining.pdf) as follows:
+
+    @article{risch2020explaining,
+    author = {Risch, Julian and Ruff, Robin and Krestel, Ralf},
+    editor = {Ruppenhofer, Josef and Siegel, Melanie and Struß, Julia Maria},
+    journal = {Journal for Language Technology and Computational Linguistics (JLCL)},
+    publisher = {German Society for Computational Linguistics and Language Technology (GSCL)}
+    number = 1,
+    pages = {1-19},
+    title = {Explaining Offensive Language Detection},
+    volume = 34,
+    year = 2020
+}
+
     
 ## Implementation
 The implementation in this repository is part of the Bachelor's thesis by Robin Ruff.
