@@ -8,9 +8,7 @@ If you use our work, please cite our short paper [**Offensive Language Detection
     title = "Offensive Language Detection Explained",
     author = "Risch, Julian and Ruff, Robin and Krestel, Ralf",
     booktitle = "Proceedings of the Second Workshop on Trolling, Aggression and Cyberbullying (TRAC@LREC)",
-    month = may,
     year = "2020",
-    address = "Marseille, France",
     publisher = "European Language Resources Association (ELRA)",
     pages = "137--143"
     }
@@ -22,10 +20,10 @@ or our journal article [**Explaining Offensive Language Detection**](https://hpi
     editor = {Ruppenhofer, Josef and Siegel, Melanie and Struß, Julia Maria},
     journal = {Journal for Language Technology and Computational Linguistics (JLCL)},
     publisher = {German Society for Computational Linguistics and Language Technology (GSCL)}
-    number = 1,
-    pages = {1-19},
+    volume={34},
+    number={1},
+    pages={29--47},
     title = {Explaining Offensive Language Detection},
-    volume = 34,
     year = 2020
 }
 
