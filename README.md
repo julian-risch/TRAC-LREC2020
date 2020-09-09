@@ -19,13 +19,13 @@ or our journal article [**Explaining Offensive Language Detection**](https://hpi
     author = {Risch, Julian and Ruff, Robin and Krestel, Ralf},
     editor = {Ruppenhofer, Josef and Siegel, Melanie and Struß, Julia Maria},
     journal = {Journal for Language Technology and Computational Linguistics (JLCL)},
-    publisher = {German Society for Computational Linguistics and Language Technology (GSCL)}
+    publisher = {German Society for Computational Linguistics and Language Technology (GSCL)},
     volume={34},
     number={1},
     pages={29--47},
     title = {Explaining Offensive Language Detection},
     year = 2020
-}
+    }
 
     
 ## Implementation
